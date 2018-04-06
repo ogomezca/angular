@@ -1,0 +1,181 @@
+<div class="main-conteiner">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+      <div class="card">
+        <form style="margin: 2vw">
+          <div class="header">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-xs-12">
+                <p class="card-title">Datos del cónyugue, concubina o concubinario y/o dependientes económico (situación actual)</p>
+                <p class="category">Elija la siguiente opción en caso de no contar con personas referidas en la siguiente sección</p>
+                <fieldset >
+                  <input class="form-check-input" type="checkbox" value="check-1" id="defaultCheck1" [(ngModel)]="checkedBox" (checked)="checkBox()">
+                  <label for="defaultCheck1">Ninguno</label>
+                </fieldset>
+              </div>
+            </div>
+            <hr/>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Nombre(s)</label>
+                <input type="text" name="namedependentInput" class="form-control" placeholder="Nombre(s)">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Apellido paterno</label>
+                <input type="text" name="lastfatherdependentInput" class="form-control" placeholder="Apellido paterno">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Apellido materno</label>
+                <input type="text" name="lastmotherdependentInput" class="form-control" placeholder="Apellido materno">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Parentesco</label>
+                <input type="text" name="relationdependentInput" class="form-control" placeholder="Parentesco">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>¿Es extranjero?</label>
+                <select class="form-control" name="foreigndependentInput">
+                  <option value="0">Seleccionar</option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>C.U.R.P.</label>
+                <input type="text" name="curpdependentInput" class="form-control" placeholder="CURP">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>¿Es dependiente económico?</label>
+                <select class="form-control" name="dependentInput">
+                  <option value="0">Seleccionar</option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-xs-8">
+              <div class="form-group">
+                <label>¿Ha desempeñado empleo, cargo, comisión o servicio en ela función pública en los últimos 3 años?</label>
+                <select class="form-control" name="jobdependentInput">
+                  <option value="0">Seleccionar</option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-8">
+              <div class="form-group">
+                <label>Indique la dependencia, entidad u organismo público para los que laboraba o prestaba sus servicios</label>
+                <input type="text" name="jobentitydependentInput" class="form-control" placeholder="Dependencia, entidad u organismo">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Indique periodo</label>
+                <input type="text" name="jobentitydependentInput" class="form-control" placeholder="Periodo">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-8">
+              <div class="form-group">
+                <label>¿Habita en el domicilio del o la declarante?</label>
+                <select class="form-control" name="addressdependentInput">
+                  <option value="0">Seleccionar</option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <label class="category">Indique la siguiente información del dependiente (en caso de no vivir con el o la declarante):</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Calle</label>
+                <input type="text" name="streetdependentInput" class="form-control" placeholder="Calle">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-2">
+              <div class="form-group">
+                <label>Número int</label>
+                <input type="text" name="streetintdependentInput" class="form-control" placeholder="Número int">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-2">
+              <div class="form-group">
+                <label>Número ext</label>
+                <input type="text" name="streetextdependentInput" class="form-control" placeholder="Número ext">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Colonia</label>
+                <input type="text" name="localitydependentInput" class="form-control" placeholder="Colonia">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <label>Municipio</label>
+                <input type="text" name="streetintdependentInput" class="form-control" placeholder="Número int">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-2">
+              <div class="form-group">
+                <label>C.P.</label>
+                <input type="text" name="cpdependentInput" class="form-control" placeholder="CP">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+              <div class="form-group">
+                <label>Entidad federativa</label>
+                <input type="text" name="entitydependentInput" class="form-control" placeholder="Entidad federativa">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+              <div class="form-group">
+                <label>País</label>
+                <input type="text" name="countrydependentInput" class="form-control" placeholder="País">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-8"></div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <button class="button-style" (click)="newExperience()">Agregar</button>
+                <button class="button-style" (click)="saveExperience()">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+<body style="background-color: white">
+
+  <div class="login-page">
+    <div class="form" >
+
+      <form class="form-imput" style="align-items: center;" >
+        <label class="alert advertencia" style="background-color: #c9a3bc"> <strong>¡Atención!</strong> Estás registrado con varios perfiles selecciona el adecuado para trabajar con lo que necesitas.</label>
+        <div class="panel panel-default" style="text-align: center">
+      <div class="panel-heading" style="background-color: #741753">Adscripciones</div>
+      <ul class="list-group">
+        <li (click)="setSelectedItem($event, item)" class="list-group-item" *ngFor="let item of roles">
+          {{item.roleName}} - {{item.adscriptionName}}
+        </li>
+      </ul>
+    </div>
+      </form>
+  </div>
+</div>
+
+</body>

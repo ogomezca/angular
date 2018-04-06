@@ -1,0 +1,40 @@
+<body>
+<div class="boxlogin">
+  <div class="login-page">
+    <div class="form">
+      <form class="input-group">
+
+        <!--   Logo login -->
+        <div class="logo">
+          <div class="logo" align="center">
+            <img src="/assets/img/logo-purple.png" width="50%" />
+            <div align="center">
+              <h3>
+                <strong class="style-title"> WebDesipa </strong>
+              </h3>
+            </div>
+          </div>
+
+          <!--    Input Login -->
+          <input #curpInput type="text" placeholder="CURP" />
+          <input #passwordInput type="password" placeholder="Contraseña" />
+
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="" class="form-check-input">Mostrar contraseña</label>
+          </div>
+
+          <!-- Buttom login -->
+
+          <button style="background-color: #741753" (click)="login(curpInput.value, passwordInput.value)">iniciar sesion</button>
+          <!--       Recover password  -->
+          <div class="password-login">
+            <a class="forgot-pass" href="#" data-target="#inv7Modal" data-toggle="modal">¿Olvidaste tu Contraseña?</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>

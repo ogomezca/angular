@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" (click)="sidebarToggle()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"  href="#" >{{getTitle()}}</a>
+    </div>
+    <div class="collapse navbar-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons" data-toggle="tooltip" data-placement="bottom" title="Cerrar cesion">power_settings_new</i>
+          </a>
+          <ul class="dropdown-menu btn-logo1">
+            <li id="effect">
+              <div class="profile-button"> <img src="/assets/img/profile.png" alt=""> <br><p class="profile-button-hover">Perfil</p> </div>
+
+            </li>
+            <li id="effect-tool">
+              <div style="text-align: center">
+                <div class="tool-button"> <img src="/assets/img/tool.png" alt=""> <br><p class="tool-button-hover">Configuración</p></div>
+              </div>
+            </li>
+
+            <li role="separator" class="divider" ></li>
+            <li id="effect-exit">
+              <div style="text-align: center">
+                <button class="btn-logout" (click)="logout()" >
+                  <img class= "exit-button" src="/assets/img/exit.png" alt=""> <br><p class="exit-button-hover">Salir</p>
+                </button>
+
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

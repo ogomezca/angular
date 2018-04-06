@@ -1,0 +1,112 @@
+<div class="main-conteiner">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+      <div class="card" style="margin: 2vw">
+        <form style="margin: 2vw" >
+          <div class="header">
+            <div class="row">
+              <div class="col-lg-10 col-md-10 col-xs-12">
+                <p class="card-title">Experiencia laboral</p>
+                <p class="category">En el caso de que cuente con experiencia laboral, incorpore al menos los últimos tres empleos, sin contar el actual</p>
+                <fieldset >
+                  <input class="form-check-input" type="checkbox" value="check-1" id="defaultCheck1" [(ngModel)]="checkedBox" (checked)="checkBox()">
+                  <label for="defaultCheck1">No cuento con experiencia laboral </label>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs4">
+              <div class="form-group">
+                <label>Sector</label>
+                <select class="form-control" name="sectorInput" [disabled]="falseSection">
+                  <option value=Seleccionar>Seleccionar</option>
+                  <option value=Privado>Privado</option>
+                  <option value=Publico>Público</option>
+                  <option value="Social">Social</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs4">
+              <div class="form-group">
+                <label>Poder</label>
+                <select class="form-control" name="poderInput" [disabled]="falseSection">
+                  <option value=Seleccionar>Seleccionar</option>
+                  <option value=Ejecutivo>Ejecutivo</option>
+                  <option value=Judicial>Judicial</option>
+                  <option value="Legislativo">Legislativo</option>
+                  <option value="OrganoConstitucionalAutonomo">Órgano Contitucional Autónomo</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs4">
+              <div class="form-group">
+                <label>Ámbito</label>
+                <select class="form-control" name="ambitoInput" [disabled]="falseSection">
+                  <option value=Seleccionar>Seleccionar</option>
+                  <option value=Estatal>Estatal</option>
+                  <option value=Federal>Federal</option>
+                  <option value="Municipal">Municipal</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <div class="form-group">
+                <label>Institución/Empresa/Nombre, denominación o razón social</label>
+                <input [disabled]="falseSection" type="text" name="jobinformationInput" class="form-control" placeholder="Institución/Empresa/Nombre, denominación o razón social">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-6">
+              <div class="form-group">
+                <label>Unidad administrativa/Área</label>
+                <input [disabled]="falseSection" type="text" name="jobareaInput" class="form-control" placeholder="Unidad administrativa/Área">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+              <div class="form-group">
+                <label>Fecha de ingreso</label>
+                <input [disabled]="falseSection" type="text" name="dateinInput" class="form-control" placeholder="Fecha de ingreso">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+              <div class="form-group">
+                <label>Fecha de egreso</label>
+                <input [disabled]="falseSection" type="text" name="dateoutInput" class="form-control" placeholder="Fecha de egreso">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-12 col-md-12 col-xs-12">
+                <label>Empleo, cargo, comisión o servicios desempeñados</label>
+                <input [disabled]="falseSection" type="text" name="jobInput" class="form-control" placeholder="Empleo, cargo, comisión o servicios desempeñados">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col-lg-6 col-md-6 col-xs-6">
+                <label>Función(es) principal(es)</label>
+                <input [disabled]="falseSection" type="text" name="functionInput" class="form-control" placeholder="Función(es) principal(es)">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-8"></div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+              <div class="form-group">
+                <button class="button-style" (click)="newExperience()">Agregar</button>
+                <button class="button-style" (click)="saveExperience()">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

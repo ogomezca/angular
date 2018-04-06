@@ -1,0 +1,15 @@
+<div class="sidebar-wrapper" style="color: #c3c3c3">
+  <div class="logo" align="center">
+    <img src="/assets/img/logo_jal.png" width="120px" />
+    <div class="simple-text" style="text-align:center;"> Declaracion
+      <br> Patrimonial </div>
+  </div>
+  <ul class="nav responsive-nav">
+    <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
+      <a [routerLink]="[menuItem.path]">
+        <i class="{{menuItem.icon}}"></i>
+        <p>{{menuItem.title}}</p>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,203 @@
+<div class="main-conteiner" onload="checkStatus()">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card">
+        <div class="header">
+          <div class="row">
+            <div class="col-lg-10 col-md-10 col-xs-10">
+              <p class="card-title"><strong>C. Titular de la Contraloría del Estado</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <p>Bajo protesta de decir verdad, presento a Usted mi declaración de situación patrimonial y de intereses inicial, conforme a lo dispuesto en el artículo 33 y 46 de la Ley General de Responsabilidades Administrativas de los Servidores Públicos y el Decreto 25865/LXI/16 publicado el 10 de noviembre de 2016 en el Periodo Oficial "El Estado de Jalisco", a través del cual se reformó el artículo 92 de la Contitución Política del Estado de Jalisco.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="card">
+        <div class="header">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <p class="card-title">Datos Generales del Declarante</p>
+              <p class="category">Declaración de situación patrimonial y de intereses inicial</p>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Nombre</label>
+              <input type="text" name="nameInput" id='nameInput' class="form-control" placeholder="Nombre">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Apellido paterno</label>
+              <input type="text" name="lastfatherInput" class="form-control" placeholder="Apellido paterno">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Apellido materno</label>
+              <input type="text" name="lastmotherInput" class="form-control" placeholder="Apellido materno">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>C.U.R.P.</label>
+              <input type="text" name="curpInput" class="form-control" placeholder="CURP">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>R.F.C.</label>
+              <input type="text" name="rfcInput" class="form-control" placeholder="RFC">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>E-mail laboral</label>
+              <input type="text" name="jobemailInput" class="form-control" placeholder="E-mail laboral">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>E-mail personal</label>
+              <input type="text" name="personalemailInput" class="form-control" placeholder="E-mail personal">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Estado civil</label>
+              <select class="form-control" name="maritalstatusInput" [(ngModel)]="maritalStatus" (change)="seeSelection()">
+                <option value="0">Seleccionar</option>
+                <option value="1">Soltero(a)</option>
+                <option value="2">Casado(a)</option>
+                <option value="3">Unión libre</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup" >
+              <label>Régimen patrimonial (casado(a))</label>
+              <select class="form-control" name="marriedstatusInput" [disabled]="checkStatusFlag">
+                <option value="Selecionar">Seleccionar</option>
+                <option value="Sociedad legal">Sociedad legal</option>
+                <option value="Sociedad conyugal">Sociedad conyugal</option>
+                <option value="Separación de bienes">Separación de bienes</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>País de nacimiento</label>
+              <input type="text" name="countrybreithInput" class="form-control" placeholder="País de nacimiento">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Nacionalidad</label>
+              <input type="text" name="nacionalityInput" class="form-control" placeholder="Nacionalidad">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Entidad</label>
+              <input type="text" name="entityInput" class="form-control" placeholder="Entidad">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Teléfono particular (inluir clave lada)</label>
+              <input type="text" name="phoneInput" class="form-control" placeholder="Teléfono">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Celular</label>
+              <input type="text" name="celphoneInput" class="form-control" placeholder="Celular">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Lugar de residencia</label>
+              <select class="form-control" name="residenceInput">
+                <option value="Selecionar">Seleccionar</option>
+                <option value="Mexico">México</option>
+                <option value="Extranjero">Extranjero</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Domicio particular</label>
+              <input type="text" name="addressInput" class="form-control" placeholder="Domicilio particular">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Número exterior</label>
+              <input type="text" name="extInput" class="form-control" placeholder="Número exterior">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="formgroup">
+              <label>Número interior</label>
+              <input type="text" name="intInput" class="form-control" placeholder="Número interior">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <div class="formgroup">
+              <label>Colonia o localidad</label>
+              <input type="text" name="locationInput" class="form-control" placeholder="Colonia o localidad">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <div class="formgroup">
+              <label>Municio</label>
+              <input type="text" name="municipalityInput" class="form-control" placeholder="Municipio">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <div class="formgroup">
+              <label>Entidad federativa</label>
+              <input type="text" name="federalentityInput" class="form-control" placeholder="Entidad federativa">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <div class="formgroup">
+              <label>C.P.</label>
+              <input type="text" name="cpInput" class="form-control" placeholder="CP">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-xs-8"></div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div class="form-group">
+              <button class="button-style" (click)="editGeneralData()">Editar</button>
+              <button class="button-style" (click)="saveGeneralData()">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

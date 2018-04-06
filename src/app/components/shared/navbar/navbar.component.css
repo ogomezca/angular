@@ -1,0 +1,140 @@
+
+.btn-logo1 {
+  background-color: #FFFFFF;
+}
+
+.btn-logo1 :hover {
+  background-color: #cbedeb;
+  color: #ffffff;
+}
+
+.btn-logout {
+  background-color: transparent;
+  border-color: #ccc;
+  border: none;
+  text-align: center;
+}
+
+
+
+.profile-button{
+  text-align: center;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  cursor: pointer;
+}
+
+.profile-button-hover{
+  text-align: center;
+  vertical-align: middle;
+  color: #1aa5a1;
+  cursor: pointer;
+
+}
+
+.profile-button-hover:hover{
+  color: #1aa5a1;
+  background-color: #cbedeb;
+  cursor: pointer;
+}
+
+#effect .profile-button-hover{
+  display: none;
+}
+
+#effect:hover .profile-button-hover{
+  display:inline-block;
+  color: #1aa5a1;
+  cursor: pointer;
+
+}
+
+
+
+
+.tool-button{
+  text-align: center;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  cursor: pointer;
+}
+
+.tool-button-hover{
+  text-align: center;
+  vertical-align: middle;
+  color: #1aa5a1;
+  cursor: pointer;
+
+}
+
+.tool-button-hover:hover{
+  color: #1aa5a1;
+  background-color: #cbedeb;
+  cursor: pointer;
+}
+
+#effect-tool .tool-button-hover{
+  display: none;
+}
+
+#effect-tool:hover .tool-button-hover{
+  display:inline-block;
+  color: #1aa5a1;
+  cursor: pointer;
+
+}
+
+
+.exit-button{
+  text-align: center;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.exit-button:focus{
+  outline: none;
+}
+
+.exit-button-hover{
+  text-align: center;
+  vertical-align: middle;
+  color: #1aa5a1;
+  cursor: pointer;
+  background-color: #cbedeb;
+
+}
+
+.exit-button-hover:hover{
+  color: #1aa5a1;
+  background-color: #cbedeb;
+  cursor: pointer;
+}
+
+#effect-exit .exit-button-hover{
+  display: none;
+}
+
+#effect-exit:hover .exit-button-hover{
+  display:inline-block;
+  color: #1aa5a1;
+  cursor: pointer;
+
+}
+
+.divider{
+  color: gray;
+}
+
+img{
+  width: 2.4vw;
+  height: 3vw;
+  padding: 3px 3px 10px 3px;
+
+}
+/* #1aa5a1  */

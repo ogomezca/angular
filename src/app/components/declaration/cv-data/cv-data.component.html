@@ -1,0 +1,120 @@
+<div class="main-conteiner">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="card">
+          <form style="margin: 2vw">
+            <div class="header">
+              <div class="row">
+                <div class="col-lg-10 col-md-10 col-xs-10">
+                  <p class="card-title">Datos Curriculares del Declarante</p>
+                  <p class="category">Escolaridad</p>
+                  <div class="form-group">
+                    <label>Grado máximo de estudios</label>
+                    <select class="form-control" name="maxeducationInput">
+                      <option value="Seleccionar">Seleccionar</option>
+                      <option value="Primaria">Primaria</option>
+                      <option value="Secundaria">Secundaria</option>
+                      <option value="Bachillerato">Bachillerato</option>
+                      <option value="Tecnico o comercial">Técnico o comercial</option>
+                      <option value="Licenciatura">Licenciatura</option>
+                      <option value="Diplomado">Diplomado</option>
+                      <option value="Maestria">Maestría</option>
+                      <option value="Doctorado">Doctorado</option>
+                      <option value="Posgrado">Posgrado</option>
+                      <option value="Ninguna">Ninguna</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="form-group">
+                  <label>Intitución educativa</label>
+                  <input type="text" name="institutionInput" placeholder="Institución educativa" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="form-group">
+                  <label>Ubicación</label>
+                  <select class="form-control" name="statusInput">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="México">México</option>
+                    <option value="Extrangero">Extrangero</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="form-group">
+                  <label>Entidad federativa</label>
+                  <input type="text" name="federalentityInput" placeholder="Entidad federativa" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="form-group">
+                  <label>Municipio</label>
+                  <input type="text" name="municipalityInput" placeholder="Municipio" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-xs-4">
+                <div class="form-group">
+                  <label>Carrera o área de conocimiento</label>
+                  <input type="text" name="municipalityInput" placeholder="Carrera o área de conocimiento" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xs-4">
+                <div class="form-group">
+                  <label>Estatus</label>
+                  <select class="form-control" name="statusInput">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Finalizado">Finalizado</option>
+                    <option value="En curso">En curso</option>
+                    <option value="Trunco">Trunco</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xs-4">
+                <label>Duración de los ciclos escolares</label>
+                <select class="form-control" name="statusInput">
+                  <option value="Seleccionar">Seleccionar</option>
+                  <option value="Mensual">Mensual</option>
+                  <option value="Bimestral">Bimentral</option>
+                  <option value="Trimestral">Trimestral</option>
+                  <option value="Cuatrimestral">Cuatrimestral</option>
+                  <option value="Semestral">Semestral</option>
+                  <option value="Anual">Anual</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-xs-4">
+                <label>Documento obtenido</label>
+                <select class="form-control" name="statusInput">
+                  <option value="Seleccionar">Seleccionar</option>
+                  <option value="Boleta">Boleta</option>
+                  <option value="Certificado">Certificado</option>
+                  <option value="Constancia">Constancia</option>
+                  <option value="Título">Título</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xs-4">
+                <label>Número de cédula profesional</label>
+                <input type="text" name="cedulaInput" placeholder="Número de cédula profesional" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-xs-8"></div>
+              <div class="col-lg-4 col-md-4 col-xs-4">
+                <div class="form-group">
+                  <button class="button-style" (click)="saveCV()">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
